@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7eb8633117.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style/styleConsultarP.css">
+    <title>ConsultarPerro</title>
+</head>
+<body>
+    <form action="Consultar_perro.php" method="GET">
+        <h2>Encontrar Mascota</h2>
+        <div class="headerConsulta">
+            <div class="filter">
+                <i class="fas fa-filter"></i>
+                <Select name = "Filtro" class=" ">
+                    <Option value = "Nombre"> Nombre</Option>
+                    <Option value = "DNI"> DNI</Option>
+                    <Option value = "Raza"> Raza</Option>
+                    <Option value = "Genero"> Genero</Option>
+                </Select>
+                <Input Type = "search" name = "Nombre" placeholder="Ingrese nombre">
+                <Input class="btn" Type ="submit" value=buscar>
+            </div>
+        </div>    
+    </form>
+    <table><!--crear tabla-->
+        <tr id="DNI"> <!--crear filas-->
+            <th>DNI</th><!--td es una columna-->
+            <th>Nombre</th>
+            <th>Fecha de nacimiento</th>
+            <th>Raza</th>
+            <th>Genero</th>
+            <th>Foto</th>
+            <th>Eliminar</th>
+            <th>Modificar</th>
+        </tr>
+        <tr id="Nombre"> <!--crear filas-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="Fecha de nacimiento"> <!--crear filas-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="Raza"> <!--crear filas-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+      </tr>
+      <tr id="Genero"> <!--crear filas-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+      </tr>
+      <tr id="foto"> <!--crear filas-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

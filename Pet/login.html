@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title> Login Veterinaria </title>
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+
+    <body>
+        
+        <div class="hero"> 
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="Login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="Sign()">Sign up</button>
+                </div>
+                
+                <form action="sign.php" method="$GET" id="Login" class="input-group">
+                    <input type="text" name= "usu" class="input-field" placeholder="User Id" required>
+                    <input type="text" name= "con" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn"  name="loguear">Log in</button>
+                </form>
+                <form action="sign.php" method="$GET" id="Sign" class="input-group">
+                    <input type="text" name= "nombre" class="input-field" placeholder="User Id" required>
+                    <input type="email" name= "correo" class="input-field" placeholder="Email" required>
+                    <input type="text" name= "contraseña" class="input-field" placeholder="Enter Password" required>
+                    <input type="text" name= "telefono" class="input-field" placeholder="Telephone" required>
+                    <input type="text" name= "cargo" class="input-field" placeholder="Role" required>
+                    <input type="text" name= "direccion" class="input-field" placeholder="Address" required>
+                    <input type="text" name= "fechaNacimiento" class="input-field" placeholder="Borned" required>
+                    <input type="text" name= "registro" class="input-field" placeholder="id" required>
+                    <button type="submit" class="submit-btn" name="registrar">Sign up</button>
+                </form>
+
+            </div>
+            <a href=""></a>
+            <a href="http://" target="_blank"></a>
+        </div>
+
+        <script>
+            var x=document.getElementById("Login");
+            var y=document.getElementById("Sign");
+            var z=document.getElementById("btn");
+
+            function Sign(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+
+            function Login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0";
+            }
+
+        </script>
+
+    </body>
+</html>

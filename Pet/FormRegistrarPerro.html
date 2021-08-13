@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/styleRegistroP.css">
+    <title>RegistrarPerro</title>
+</head>
+<body>
+    <div class="contenedor">
+        
+        <div class="fondo">
+
+            <div class="tForm">
+
+                <h2>Registro Perruno</h2>
+
+                <form action="Registrar_perro.php" method="$GET">
+                    <div class="cn">
+                        <img class="imgen" src="img/nombre.png" alt="(nombre d eimagen)" title="DNI"  whidth="30" height="25"/> 
+                        <Input class="inp" name = "Codigo" type= "Text" placeholder="Ingresa el DNI" maxlength="30"><br>
+                    </div>
+
+                    <div class="cn">
+                        <img class="imgen" src="img/nom.png" alt="(nombre d eimagen)" title="DNI"  whidth="30" height="25"/> 
+                        <Input class="inp" name = "Nombre" type= "Text" placeholder="Ingresa el nombre" maxlength="30"><br>
+                    </div>
+
+                    <h3>Fecha de nacimiento</h3>
+                    <Input class="inp" name= "FechNac" Type = "Date"><br>
+                    
+                    <h3>Raza</h3> 
+                    <Select name = "Raza" class="inp">
+                        <Option value = "Pitbull"> Pitbull</Option>
+                        <Option value = "Bulldog"> Bulldog</Option>
+                        <Option value = "Shichu"> Shichu</Option>
+                        <Option value = "Pequines"> Pequines</Option>
+                        <Option value = "San Bernardo"> San Bernardo</Option>
+                        <Option value = "Chiguahua"> Chiguahua</Option>
+                    </Select><br>
+
+                    <h3>Genero</h3>
+                    
+                    <Input class="btn1" name="Genero" Type = "Radio"> <b>Macho</b> </input>
+                    <Input class="btn1" name= "Genero" Type = "Radio"> <b>Hembra</b> </input><br>
+                    
+                    
+                    <!-- <h3>Subir foto</h3>  -->
+                    <!-- <Input  type = "file" name = "Foto"><br> --> 
+                    <div class="btn">
+                        <Input class="boton" name= "Registrar" Type = Submit value = "Registrar">
+                        <Input class="boton" Type = Submit value = "Cancelar">
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

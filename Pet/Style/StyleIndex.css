@@ -1,0 +1,123 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+  box-sizing:border-box;
+}
+body {
+  background:#182a34;
+  font-family:"Raleway";
+}
+.tabs {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:80%;
+  height:90%;
+  /* padding:30px 20px; */
+  background-color: #729AA7;
+  border-radius: 5px;
+  /* box-shadow:5px 5px 10px 5px rgb(3, 1, 1); */
+  overflow:hidden;
+}
+.f-header{
+  background-image:url(img/f-header.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float:left;
+  width:30%;
+  height:100%;
+
+}
+.tabs .f-header .tab-header {
+  background-color: #182a34c9;
+  float:left;
+  width:100%;
+  height:100%;
+  padding:10px 0px;
+}
+
+.logo{
+  display: flex;
+  flex-direction:wrap;
+  justify-content: center;
+  padding: 0%;
+  align-items: center;
+}
+.logo h4{
+  font-size: 30px;
+  font-family: 'Staatliches', cursive;
+  color: #ffffff;
+}
+
+
+.tabs .tab-header > div {
+  
+  height:50px;
+  line-height:50px;
+  font-size:20px;
+  font-weight:600;
+  color:rgb(255, 255, 255);
+  cursor:pointer;
+  padding-left:60px;
+
+}
+.tabs .tab-header > div:hover,
+.tabs .tab-header > div.active {
+  color:#A8C7D2;
+}
+.tabs .tab-header div i {
+  display:inline-block;
+  margin-left:10px;
+  margin-right:5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.tabs .tab-content {
+  position:relative;
+  height:100%;
+  overflow:hidden;
+}
+.tabs .tab-content > div > i {
+  
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background:rgb(85, 85, 85);
+  color:#f5f5f5;
+  font-size:25px;
+  font-weight:600;
+  text-align:center;
+  line-height:50px;
+  border-radius:50%;
+}
+.tabs .tab-content > div {
+  height:100%;
+  width:100%;
+  background-color: #729AA7;
+  position:absolute;
+  text-align:center;
+  /* padding:20px 20px 20px; */
+  top:-200%;
+  transition:all 500ms ease-in-out;
+}
+.frame{
+  background-color: #729AA7;
+  height:100%;
+  width:100%;
+}
+
+.tabs .tab-content > div.active {
+  top:0px;
+}
+ 
+.tabs .tab-indicator {
+  position:absolute;
+  width:4px;
+  height:50px;
+  background:#A8C7D2;
+  left:325px;
+  margin-top: 50px;
+  transition:all 500ms ease-in-out;
+}

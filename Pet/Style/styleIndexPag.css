@@ -1,0 +1,354 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+.contenedor{
+    background-image: url(img/IMG-20210627-WA0034.jpg);
+    background-size: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+}
+
+.Home{
+    background-color: #A46464;
+    width: 100%;
+    height: 655px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: #a4646462;
+    background-image: url(img/IMG-20210627-WA0034.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 378px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.Titulo{
+    background-color: #3e4659a9;
+    width: 80%;
+    margin-top: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    font-size: 18px;
+}
+.logo h1{
+    font-size: 20px;
+    color:#ffffff ;
+    font-family: 'Staatliches', cursive;
+}
+
+.menu a{
+    margin: 10px;
+    font-size:20px ;
+    color:#ffffff;
+    text-decoration: none;
+    font-family: 'Jomhuria', cursive;
+}
+
+.menu a:hover,
+.menu a.active {
+    color:#A9ABDC;
+    text-decoration: #A9ABDC;
+}
+
+.portada{
+    position:absolute;
+    width:650px;
+    height:350px;
+    left:350px;
+    margin-top:90px;
+}
+
+.Inicio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: wrap;
+    flex-direction: column;
+}
+.text h1{
+    font-size: 25px;
+    color:#ffffff ;
+    font-family: 'Staatliches', cursive;
+    margin: 4px;
+}
+
+.text h3{
+    font-size: 15px;
+    color:#ffffff ;
+    margin: 4px;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+}
+.Serv{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/IMG-20210627-WA0034.jpg);
+    background-attachment: fixed;
+}  
+.Servicios{
+    background-color: #52343ead;
+    width: 100%;
+    height: 655px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 60px;
+    margin-left:100px;
+    color: white;
+    background-color: #a46464be;
+    border-radius: 6px;
+}  
+.cajas{
+    margin-top: 20px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: wrap;
+    align-items:flex-start;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.caja{
+    background-color: white;
+    position: relative;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+    /* /* margin-left: 10px; */
+    margin-right: 10px; 
+    border-radius: 6px;
+     /*box-shadow: 0px 15px 25px #05050c; */
+    cursor: pointer;
+
+}
+.caja img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #93989888;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.caja:hover>.capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.caja:hover>.capa h1{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.capa h1{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.capa p{
+    color:#201B24;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.caja:hover>img{
+    transform: scale(1.3);
+}
+
+.Galeria{
+    background-color: #3e465986;
+    width: 100%;
+    height:655px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+    margin-top: 20px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: wrap;
+    align-items:flex-start;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.Nosotros{
+    background-color: #52343ead;
+    width: 100%;
+    height: 655px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.contenNoso{
+    
+    margin-top: 20px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: wrap;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.dogsNoso{
+    position: absolute;
+    margin-top: -187px;
+}
+
+.dogsNoso2{
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 442px;
+}
+.textNoso{
+    background-color: #A46464 ;
+    width:600px ;
+    height: 400px;
+    margin-left: 10%;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: wrap;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px #05050c;
+}
+.textNoso h3{
+    font-size: 15px;
+    color:#ffffff ;
+    margin: 4px;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.Contactanos{
+    background-color: #A46464;
+    
+    width: 100%;
+    height: 655px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fondoCont{
+    background-image: url(img/IMG-20210627-WA0034.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 378px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.imagenCont{
+    background-color: #52343ead;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.portada2{
+    position:absolute;
+    width:650px;
+    height:350px;
+    left:350px;
+    margin-top:30px;
+}
+.infoCont{
+    width: 90%;
+    height: 245px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.infoCont p{
+    font-size:30px ;
+}
+
+.social-media{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.social-media a{
+    margin-top: 10px;
+}

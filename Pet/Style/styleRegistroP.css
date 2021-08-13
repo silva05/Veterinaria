@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+.tForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    color: #182a34;
+    justify-content: center;
+}
+.tForm h2{
+    
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+.tForm form{
+    width: 40%;
+}
+
+.cn{
+    width: 100%;
+    display: flex;
+}
+
+.imgen{
+    margin-right: 0;
+    background-color: rgba(225, 225, 225,.5); 
+    /* color:rgb(221, 28, 28); */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: solid 3px rgba(225, 225, 225,.01);
+    border-bottom: solid 9.5px rgba(225, 225, 225,.01);
+    border-top: solid 9px rgba(225, 225, 225,.01);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+form h3{
+    color: #182a34;;
+    margin: 5px;
+    font-family: 'Jomhuria', cursive;
+    font-size: 15px;
+}
+.btn1{
+     margin-left: 30px;
+    
+}
+.inp{
+    box-shadow: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 5px;
+    height: 40px;
+    border: solid 2px rgba(225, 225, 225,.5);
+    font-family: 'Jomhuria', cursive;
+    font-size: 15px;
+    color: #182a34;
+    border-top-right-radius:3px;
+    border-bottom-right-radius: 3px;
+    text-align: left;
+    transition: all 250ms ease;
+}
+.tForm form .inp:focus{
+    outline: 0px;
+    background-color: rgba(225, 225, 225, 0.425);
+    border: solid 2px rgba(225, 225, 225,.01);
+    color: #182a34;
+}
+.btn{
+    display: flex;
+    justify-content:space-between;
+}
+.boton{
+    width: 40%;
+    height: 20%;
+    margin-bottom:50px;
+    font-size: 20px;
+    border: 0;
+    text-align: center;
+    background: rgba(225, 0, 0,0.0);
+    border-bottom: solid 1px rgb(0, 0, 0);
+    color: #182a34;
+    margin-top: 12px;
+    transition: all .3s ease;
+    padding: 3px;
+}
+
+.boton:hover{
+    width: 40%;
+    border: 120%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgb(88, 85, 136);
+    cursor: pointer;
+}
+.boton:active{
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.boton:focus{
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}

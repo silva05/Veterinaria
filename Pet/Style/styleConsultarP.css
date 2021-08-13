@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+form{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    color: #182a34;
+    justify-content: center;
+
+}
+
+form h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.headerConsulta{
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    color: #182a34;
+    justify-content:center;
+}
+
+.filter{
+    width: 90%;
+    font-family: 'Jomhuria', cursive;
+    font-size: 20px;
+    color: #182a34;
+    border-top-right-radius:3px;
+    border-bottom-right-radius: 3px;
+}
+
+.filter i{
+    width: 2%;
+    display:inline-block;
+    margin-left:10px;
+    margin-right:5px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.filter select{
+    box-shadow: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 30px;
+    border: solid 2px rgba(225, 225, 225,.5);
+    font-family: 'Jomhuria', cursive;
+    font-size: 15px;
+    color: #182a34;
+    border-radius: 3px;
+    text-align: left;
+    /* transition: all 250ms ease; */
+}
+.filter Input{
+    box-shadow: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 30px;
+    border: solid 2px rgba(225, 225, 225,.5);
+    font-family: 'Jomhuria', cursive;
+    font-size: 15px;
+    color: #182a34;
+    border-radius: 3px;
+    text-align: left;
+}
+
+table{
+    margin-top: 15%;
+    width: 90%;
+}
+
+table,th{
+    border:1px solid white;
+    border-collapse: collapse;
+    padding: 2px;
+    color: #182a34;
+    font-family: 'Jomhuria', cursive;
+  }
+td{
+border:1px solid white;
+border-collapse: collapse;
+padding: 10px;
+color: #182a34;
+font-family: 'Jomhuria', cursive;
+}
